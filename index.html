@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Naveen Ganadi — Data Scientist, AI &amp; ML Engineer</title>
+  <title>Naveen Ganadi - Data Scientist, AI &amp; ML Engineer</title>
   <meta name="description"
-    content="Portfolio of Naveen Ganadi — Expert Data Scientist, AI & Machine Learning Engineer specializing in GenAI, LLMs, NLP, and scalable ML systems." />
+    content="Portfolio of Naveen Ganadi - Expert Data Scientist, AI & Machine Learning Engineer specializing in GenAI, LLMs, NLP, and scalable ML systems." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -23,30 +23,30 @@
     }
 
     :root {
-      --bg-primary: #f8fafc;
-      --bg-secondary: #f1f5f9;
-      --bg-card: rgba(255, 255, 255, 0.85);
-      --bg-glass: rgba(0, 0, 0, 0.02);
-      --border-glass: rgba(0, 0, 0, 0.08);
-      --text-primary: #0f172a;
-      --text-secondary: #475569;
-      --text-muted: #94a3b8;
-      --accent-blue: #2563eb;
-      --accent-purple: #dc2626;
-      --accent-cyan: #0891b2;
-      --accent-emerald: #059669;
-      --accent-amber: #d97706;
-      --accent-rose: #e11d48;
-      --gradient-primary: linear-gradient(135deg, #2563eb, #dc2626);
-      --gradient-hero: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 40%, #e2e8f0 100%);
+      --bg-primary: #06080f;
+      --bg-secondary: #0a0e1a;
+      --bg-card: rgba(12, 17, 30, 0.85);
+      --bg-glass: rgba(255, 255, 255, 0.03);
+      --border-glass: rgba(255, 255, 255, 0.06);
+      --text-primary: #e8ecf4;
+      --text-secondary: #8b95a8;
+      --text-muted: #4a5568;
+      --accent-blue: #3b82f6;
+      --accent-purple: #a855f7;
+      --accent-cyan: #06d6a0;
+      --accent-emerald: #06d6a0;
+      --accent-amber: #f59e0b;
+      --accent-rose: #f43f5e;
+      --gradient-primary: linear-gradient(135deg, #3b82f6, #a855f7);
+      --gradient-hero: linear-gradient(135deg, #06080f 0%, #0a0e1a 40%, #0f1629 100%);
       --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
       --radius-sm: 8px;
       --radius-md: 12px;
       --radius-lg: 20px;
       --radius-xl: 28px;
-      --shadow-glow: 0 0 30px rgba(37, 99, 235, 0.12);
-      --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 40px rgba(59, 130, 246, 0.15), 0 0 80px rgba(168, 85, 247, 0.08);
+      --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
       --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -70,9 +70,23 @@
       z-index: 0;
       pointer-events: none;
       background:
-        radial-gradient(ellipse 600px 600px at 20% 10%, rgba(37, 99, 235, 0.04), transparent),
-        radial-gradient(ellipse 500px 500px at 80% 30%, rgba(220, 38, 38, 0.03), transparent),
-        radial-gradient(ellipse 400px 400px at 50% 80%, rgba(8, 145, 178, 0.03), transparent);
+        radial-gradient(ellipse 800px 800px at 15% 5%, rgba(59, 130, 246, 0.08), transparent),
+        radial-gradient(ellipse 600px 600px at 85% 25%, rgba(168, 85, 247, 0.06), transparent),
+        radial-gradient(ellipse 500px 500px at 50% 85%, rgba(6, 214, 160, 0.04), transparent);
+    }
+
+    .ambient-bg::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(255, 255, 255, 0.008) 2px,
+        rgba(255, 255, 255, 0.008) 4px
+      );
+      pointer-events: none;
     }
 
     /* ===== NAVBAR ===== */
@@ -87,17 +101,24 @@
       align-items: center;
       justify-content: space-between;
       padding: 12px 28px;
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(20px) saturate(1.4);
-      border: 1px solid var(--border-glass);
+      background: rgba(22, 28, 50, 0.98);
+      backdrop-filter: blur(24px) saturate(1.6);
+      border: 1px solid rgba(59, 130, 246, 0.3);
       border-radius: 60px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.6),
+        0 0 20px rgba(59, 130, 246, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
       transition: var(--transition-base);
     }
 
     .navbar.scrolled {
-      background: rgba(255, 255, 255, 0.95);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      background: rgba(18, 22, 42, 0.99);
+      border-color: rgba(59, 130, 246, 0.4);
+      box-shadow:
+        0 8px 40px rgba(0, 0, 0, 0.7),
+        0 0 30px rgba(59, 130, 246, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
     }
 
     .nav-logo {
@@ -127,8 +148,8 @@
 
     .nav-links a:hover,
     .nav-links a.active {
-      color: var(--text-primary);
-      background: rgba(255, 255, 255, 0.06);
+      color: var(--accent-cyan);
+      background: rgba(6, 214, 160, 0.08);
     }
 
     .nav-hamburger {
@@ -143,7 +164,7 @@
       display: block;
       width: 22px;
       height: 2px;
-      background: var(--text-secondary);
+      background: var(--accent-cyan);
       margin: 5px 0;
       border-radius: 2px;
       transition: var(--transition-base);
@@ -161,105 +182,321 @@
       padding: 0 24px;
     }
 
-    /* ===== COVER BANNER ===== */
-    .cover-banner {
+    /* ===== FUTURISTIC HERO HEADER ===== */
+    .hero-header {
       width: 100%;
-      height: 16.67vh;
-      background: url('cover.png') center center / cover no-repeat;
       position: relative;
       z-index: 2;
-      margin-top: 0;
-      padding-top: 70px;
-      height: calc(16.67vh + 70px);
+      padding-top: 90px;
+      padding-bottom: 60px;
       overflow: hidden;
+      background: linear-gradient(180deg, #06080f 0%, #0a0e1a 50%, #0d1225 100%);
     }
 
-    .cover-text {
-      position: absolute;
-      inset: 0;
-      z-index: 4;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      text-align: center;
-      padding: 40px 24px 0;
-    }
-
-    .cover-text h2 {
-      font-size: 1.4rem;
-      font-weight: 800;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 4px;
-      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .cover-text p {
-      font-size: 0.82rem;
-      font-weight: 400;
-      opacity: 0.92;
-      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-    }
-
-    .cover-text .cover-services {
-      font-size: 0.75rem;
-      font-weight: 600;
-      margin-top: 4px;
-      opacity: 0.85;
-      letter-spacing: 0.5px;
-    }
-
-    .cover-banner::after {
+    .hero-header::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.45);
+      background:
+        linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      animation: grid-drift 20s linear infinite;
     }
 
-    .cover-logo {
+    @keyframes grid-drift {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(60px, 60px); }
+    }
+
+    .hero-header-canvas {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hero-header-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Profile Avatar with Orbital Rings */
+    .profile-orbit-wrapper {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      flex-shrink: 0;
+    }
+
+    .profile-avatar {
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
-      right: -5vh;
-      z-index: 3;
-      height: 130%;
-      object-fit: contain;
-    }
-
-    .cover-avatar {
-      position: absolute;
-      top: 0;
-      left: -3vh;
-      z-index: 3;
-      height: 100%;
-      aspect-ratio: 1;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
-      padding: 4px;
-      background: var(--gradient-primary);
-      box-shadow: 0 0 40px rgba(59, 130, 246, 0.3), 0 0 80px rgba(239, 68, 68, 0.15);
+      padding: 3px;
+      background: linear-gradient(135deg, #3b82f6, #a855f7, #06d6a0);
+      box-shadow: 0 0 40px rgba(59, 130, 246, 0.3), 0 0 80px rgba(168, 85, 247, 0.12);
       animation: avatar-glow 4s ease-in-out infinite alternate;
+      z-index: 3;
     }
 
-    .cover-avatar img {
+    .profile-avatar img {
       width: 100%;
       height: 100%;
       border-radius: 50%;
       object-fit: cover;
       object-position: top center;
-      transform: scale(1.4);
-      border: 4px solid var(--bg-primary);
+      border: 3px solid var(--bg-primary);
     }
 
     @keyframes avatar-glow {
-      0% {
-        box-shadow: 0 0 30px rgba(59, 130, 246, 0.25), 0 0 60px rgba(239, 68, 68, 0.1);
-      }
+      0% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.35), 0 0 60px rgba(168, 85, 247, 0.15); }
+      100% { box-shadow: 0 0 50px rgba(59, 130, 246, 0.5), 0 0 100px rgba(168, 85, 247, 0.25); }
+    }
 
-      100% {
-        box-shadow: 0 0 50px rgba(59, 130, 246, 0.4), 0 0 100px rgba(239, 68, 68, 0.2);
-      }
+    /* Orbital Rings */
+    .orbit-ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      top: 50%;
+      left: 50%;
+    }
+
+    .orbit-ring-1 {
+      width: 180px;
+      height: 180px;
+      margin-top: -90px;
+      margin-left: -90px;
+      border-top-color: rgba(59, 130, 246, 0.4);
+      border-right-color: rgba(168, 85, 247, 0.2);
+      animation: orbit-spin 8s linear infinite;
+    }
+
+    .orbit-ring-2 {
+      width: 210px;
+      height: 210px;
+      margin-top: -105px;
+      margin-left: -105px;
+      border-bottom-color: rgba(6, 214, 160, 0.3);
+      border-left-color: rgba(59, 130, 246, 0.15);
+      animation: orbit-spin 12s linear infinite reverse;
+    }
+
+    .orbit-ring-3 {
+      width: 240px;
+      height: 240px;
+      margin-top: -120px;
+      margin-left: -120px;
+      border-top-color: rgba(168, 85, 247, 0.25);
+      border-right-color: rgba(6, 214, 160, 0.1);
+      animation: orbit-spin 16s linear infinite;
+    }
+
+    @keyframes orbit-spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Orbit Dots */
+    .orbit-dot {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+    }
+
+    .orbit-dot-1 {
+      background: #3b82f6;
+      box-shadow: 0 0 10px #3b82f6, 0 0 20px rgba(59, 130, 246, 0.3);
+      animation: dot-orbit-1 8s linear infinite;
+    }
+
+    .orbit-dot-2 {
+      background: #a855f7;
+      box-shadow: 0 0 10px #a855f7, 0 0 20px rgba(168, 85, 247, 0.3);
+      animation: dot-orbit-2 12s linear infinite reverse;
+    }
+
+    .orbit-dot-3 {
+      background: #06d6a0;
+      box-shadow: 0 0 10px #06d6a0, 0 0 20px rgba(6, 214, 160, 0.3);
+      animation: dot-orbit-3 16s linear infinite;
+    }
+
+    @keyframes dot-orbit-1 {
+      0% { transform: rotate(0deg) translateX(90px) rotate(0deg); }
+      100% { transform: rotate(360deg) translateX(90px) rotate(-360deg); }
+    }
+
+    @keyframes dot-orbit-2 {
+      0% { transform: rotate(0deg) translateX(105px) rotate(0deg); }
+      100% { transform: rotate(360deg) translateX(105px) rotate(-360deg); }
+    }
+
+    @keyframes dot-orbit-3 {
+      0% { transform: rotate(0deg) translateX(120px) rotate(0deg); }
+      100% { transform: rotate(360deg) translateX(120px) rotate(-360deg); }
+    }
+
+    /* Header Text Content */
+    .header-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .header-name {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+
+    .header-name .name-gradient {
+      background: linear-gradient(135deg, #3b82f6, #a855f7, #06d6a0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .header-title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+
+    .header-title .accent {
+      color: var(--accent-cyan);
+      font-weight: 600;
+    }
+
+    /* Domain Tags */
+    .domain-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .domain-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border: 1px solid;
+      transition: var(--transition-base);
+      cursor: default;
+    }
+
+    .domain-tag .tag-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    .domain-tag.ai {
+      color: #3b82f6;
+      border-color: rgba(59, 130, 246, 0.25);
+      background: rgba(59, 130, 246, 0.08);
+    }
+
+    .domain-tag.ai .tag-dot {
+      background: #3b82f6;
+      box-shadow: 0 0 6px #3b82f6;
+    }
+
+    .domain-tag.ml {
+      color: #a855f7;
+      border-color: rgba(168, 85, 247, 0.25);
+      background: rgba(168, 85, 247, 0.08);
+    }
+
+    .domain-tag.ml .tag-dot {
+      background: #a855f7;
+      box-shadow: 0 0 6px #a855f7;
+    }
+
+    .domain-tag.data {
+      color: #06d6a0;
+      border-color: rgba(6, 214, 160, 0.25);
+      background: rgba(6, 214, 160, 0.08);
+    }
+
+    .domain-tag.data .tag-dot {
+      background: #06d6a0;
+      box-shadow: 0 0 6px #06d6a0;
+    }
+
+    .domain-tag.web {
+      color: #f59e0b;
+      border-color: rgba(245, 158, 11, 0.25);
+      background: rgba(245, 158, 11, 0.08);
+    }
+
+    .domain-tag.web .tag-dot {
+      background: #f59e0b;
+      box-shadow: 0 0 6px #f59e0b;
+    }
+
+    .domain-tag:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Status Line */
+    .header-status {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .status-indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #06d6a0;
+      box-shadow: 0 0 8px #06d6a0, 0 0 20px rgba(6, 214, 160, 0.3);
+      animation: pulse 2s infinite;
+    }
+
+    .header-status span {
+      color: var(--accent-cyan);
+      font-weight: 500;
+    }
+
+    /* Bottom glow line */
+    .hero-header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.5), rgba(168, 85, 247, 0.5), rgba(6, 214, 160, 0.3), transparent);
     }
 
     /* ===== HERO ===== */
@@ -416,23 +653,24 @@
     .btn-primary {
       background: var(--gradient-primary);
       color: #fff;
-      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.35);
+      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.35), 0 0 40px rgba(168, 85, 247, 0.15);
     }
 
     .btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(59, 130, 246, 0.5);
+      box-shadow: 0 8px 30px rgba(59, 130, 246, 0.5), 0 0 60px rgba(168, 85, 247, 0.25);
     }
 
     .btn-outline {
-      background: transparent;
+      background: rgba(255, 255, 255, 0.03);
       color: var(--text-primary);
-      border: 1px solid var(--border-glass);
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .btn-outline:hover {
-      background: rgba(255, 255, 255, 0.06);
-      border-color: rgba(255, 255, 255, 0.15);
+      background: rgba(59, 130, 246, 0.08);
+      border-color: rgba(59, 130, 246, 0.3);
+      color: var(--accent-cyan);
     }
 
     .hero-stats {
@@ -499,7 +737,19 @@
       border-radius: var(--radius-lg);
       padding: 48px;
       backdrop-filter: blur(12px);
-      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-content::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.4), rgba(168, 85, 247, 0.4), transparent);
     }
 
     .about-content p {
@@ -533,9 +783,10 @@
     }
 
     .skill-category:hover {
-      border-color: rgba(59, 130, 246, 0.25);
+      border-color: rgba(59, 130, 246, 0.3);
       transform: translateY(-4px);
       box-shadow: var(--shadow-glow);
+      background: rgba(12, 17, 30, 0.95);
     }
 
     .skill-category-header {
@@ -556,48 +807,57 @@
     }
 
     .skill-icon.ai {
-      background: rgba(59, 130, 246, 0.12);
+      background: rgba(59, 130, 246, 0.15);
       color: var(--accent-blue);
+      box-shadow: 0 0 12px rgba(59, 130, 246, 0.1);
     }
 
     .skill-icon.gen {
-      background: rgba(239, 68, 68, 0.12);
+      background: rgba(168, 85, 247, 0.15);
       color: var(--accent-purple);
+      box-shadow: 0 0 12px rgba(168, 85, 247, 0.1);
     }
 
     .skill-icon.frame {
-      background: rgba(6, 182, 212, 0.12);
+      background: rgba(6, 214, 160, 0.15);
       color: var(--accent-cyan);
+      box-shadow: 0 0 12px rgba(6, 214, 160, 0.1);
     }
 
     .skill-icon.prog {
-      background: rgba(16, 185, 129, 0.12);
+      background: rgba(6, 214, 160, 0.15);
       color: var(--accent-emerald);
+      box-shadow: 0 0 12px rgba(6, 214, 160, 0.1);
     }
 
     .skill-icon.cloud {
-      background: rgba(245, 158, 11, 0.12);
+      background: rgba(245, 158, 11, 0.15);
       color: var(--accent-amber);
+      box-shadow: 0 0 12px rgba(245, 158, 11, 0.1);
     }
 
     .skill-icon.viz {
-      background: rgba(244, 63, 94, 0.12);
+      background: rgba(244, 63, 94, 0.15);
       color: var(--accent-rose);
+      box-shadow: 0 0 12px rgba(244, 63, 94, 0.1);
     }
 
     .skill-icon.devops {
-      background: rgba(59, 130, 246, 0.12);
+      background: rgba(59, 130, 246, 0.15);
       color: var(--accent-blue);
+      box-shadow: 0 0 12px rgba(59, 130, 246, 0.1);
     }
 
     .skill-icon.monitor {
-      background: rgba(239, 68, 68, 0.12);
+      background: rgba(168, 85, 247, 0.15);
       color: var(--accent-purple);
+      box-shadow: 0 0 12px rgba(168, 85, 247, 0.1);
     }
 
     .skill-icon.tools {
-      background: rgba(6, 182, 212, 0.12);
+      background: rgba(6, 214, 160, 0.15);
       color: var(--accent-cyan);
+      box-shadow: 0 0 12px rgba(6, 214, 160, 0.1);
     }
 
     .skill-category h3 {
@@ -616,17 +876,17 @@
       font-weight: 500;
       padding: 5px 14px;
       border-radius: 30px;
-      background: var(--bg-glass);
-      border: 1px solid var(--border-glass);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       color: var(--text-secondary);
       transition: var(--transition-base);
       cursor: default;
     }
 
     .skill-tag:hover {
-      color: var(--text-primary);
-      border-color: rgba(59, 130, 246, 0.3);
-      background: rgba(59, 130, 246, 0.08);
+      color: var(--accent-cyan);
+      border-color: rgba(6, 214, 160, 0.3);
+      background: rgba(6, 214, 160, 0.08);
     }
 
     /* ===== EXPERIENCE ===== */
@@ -646,8 +906,9 @@
       top: 8px;
       bottom: 8px;
       width: 2px;
-      background: linear-gradient(180deg, var(--accent-blue), var(--accent-purple), var(--accent-blue));
+      background: linear-gradient(180deg, var(--accent-blue), var(--accent-purple), var(--accent-cyan));
       border-radius: 2px;
+      box-shadow: 0 0 8px rgba(59, 130, 246, 0.2);
     }
 
     .timeline-item {
@@ -674,7 +935,7 @@
 
     .timeline-item:hover .timeline-dot {
       background: var(--accent-blue);
-      box-shadow: 0 0 16px rgba(59, 130, 246, 0.5);
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.6), 0 0 40px rgba(59, 130, 246, 0.2);
     }
 
     .timeline-card {
@@ -687,8 +948,9 @@
     }
 
     .timeline-item:hover .timeline-card {
-      border-color: rgba(59, 130, 246, 0.2);
+      border-color: rgba(59, 130, 246, 0.25);
       box-shadow: var(--shadow-glow);
+      background: rgba(12, 17, 30, 0.95);
     }
 
     .timeline-header {
@@ -718,7 +980,7 @@
 
     .timeline-company {
       font-size: 0.92rem;
-      color: var(--accent-purple);
+      color: var(--accent-cyan);
       font-weight: 600;
       margin-bottom: 12px;
     }
@@ -753,7 +1015,7 @@
     }
 
     .highlight {
-      color: var(--text-primary);
+      color: var(--accent-cyan);
       font-weight: 600;
     }
 
@@ -777,7 +1039,7 @@
     }
 
     .edu-card .edu-school {
-      color: var(--accent-purple);
+      color: var(--accent-cyan);
       font-weight: 600;
       font-size: 0.95rem;
       margin-bottom: 8px;
@@ -810,11 +1072,17 @@
 
     .award-card {
       background: var(--bg-card);
-      border: 1px solid rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.12);
       border-radius: var(--radius-lg);
       padding: 36px;
       backdrop-filter: blur(12px);
       text-align: center;
+      transition: var(--transition-base);
+    }
+
+    .award-card:hover {
+      border-color: rgba(245, 158, 11, 0.3);
+      box-shadow: 0 0 30px rgba(245, 158, 11, 0.08);
     }
 
     .award-icon {
@@ -862,6 +1130,7 @@
       border-color: rgba(59, 130, 246, 0.3);
       transform: translateY(-3px);
       box-shadow: var(--shadow-glow);
+      background: rgba(12, 17, 30, 0.95);
     }
 
     .contact-icon {
@@ -876,23 +1145,27 @@
     }
 
     .contact-icon.email {
-      background: rgba(59, 130, 246, 0.12);
+      background: rgba(59, 130, 246, 0.15);
       color: var(--accent-blue);
+      box-shadow: 0 0 12px rgba(59, 130, 246, 0.1);
     }
 
     .contact-icon.phone {
-      background: rgba(16, 185, 129, 0.12);
+      background: rgba(6, 214, 160, 0.15);
       color: var(--accent-emerald);
+      box-shadow: 0 0 12px rgba(6, 214, 160, 0.1);
     }
 
     .contact-icon.linkedin {
-      background: rgba(239, 68, 68, 0.12);
+      background: rgba(168, 85, 247, 0.15);
       color: var(--accent-purple);
+      box-shadow: 0 0 12px rgba(168, 85, 247, 0.1);
     }
 
     .contact-icon.location {
-      background: rgba(6, 182, 212, 0.12);
+      background: rgba(6, 214, 160, 0.15);
       color: var(--accent-cyan);
+      box-shadow: 0 0 12px rgba(6, 214, 160, 0.1);
     }
 
     .contact-info .contact-label {
@@ -932,7 +1205,8 @@
     .project-card:hover {
       transform: translateY(-4px);
       box-shadow: var(--shadow-glow);
-      border-color: rgba(37, 99, 235, 0.2);
+      border-color: rgba(59, 130, 246, 0.25);
+      background: rgba(12, 17, 30, 0.95);
     }
 
     .project-card .project-emoji {
@@ -1029,9 +1303,10 @@
     }
 
     .consult-card:hover {
-      border-color: rgba(37, 99, 235, 0.25);
+      border-color: rgba(59, 130, 246, 0.25);
       transform: translateY(-4px);
       box-shadow: var(--shadow-glow);
+      background: rgba(12, 17, 30, 0.95);
     }
 
     .consult-card:hover::before {
@@ -1050,15 +1325,18 @@
     }
 
     .consult-icon.strategy {
-      background: rgba(37, 99, 235, 0.1);
+      background: rgba(59, 130, 246, 0.12);
+      box-shadow: 0 0 12px rgba(59, 130, 246, 0.08);
     }
 
     .consult-icon.llm {
-      background: rgba(220, 38, 38, 0.1);
+      background: rgba(168, 85, 247, 0.12);
+      box-shadow: 0 0 12px rgba(168, 85, 247, 0.08);
     }
 
     .consult-icon.mlops {
-      background: rgba(8, 145, 178, 0.1);
+      background: rgba(6, 214, 160, 0.12);
+      box-shadow: 0 0 12px rgba(6, 214, 160, 0.08);
     }
 
     .consult-card h3 {
@@ -1119,7 +1397,7 @@
 
     /* ===== SCROLLBAR ===== */
     ::-webkit-scrollbar {
-      width: 8px;
+      width: 6px;
     }
 
     ::-webkit-scrollbar-track {
@@ -1127,12 +1405,12 @@
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgba(0, 0, 0, 0.12);
+      background: rgba(59, 130, 246, 0.25);
       border-radius: 4px;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: rgba(0, 0, 0, 0.2);
+      background: rgba(59, 130, 246, 0.45);
     }
 
     /* ===== RESPONSIVE ===== */
@@ -1159,8 +1437,32 @@
         margin: 0 auto 32px;
       }
 
-      .cover-avatar {
-        right: 20px;
+      .hero-header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+      }
+
+      .header-text {
+        text-align: center;
+      }
+
+      .domain-tags {
+        justify-content: center;
+      }
+
+      .header-status {
+        justify-content: center;
+      }
+
+      .profile-orbit-wrapper {
+        width: 180px;
+        height: 180px;
+      }
+
+      .profile-avatar {
+        width: 120px;
+        height: 120px;
       }
 
       .hero-quote {
@@ -1177,7 +1479,7 @@
         top: 60px;
         left: 0;
         right: 0;
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(10, 14, 26, 0.95);
         backdrop-filter: blur(20px);
         border-radius: var(--radius-lg);
         border: 1px solid var(--border-glass);
@@ -1242,15 +1544,39 @@
     </button>
   </nav>
 
-  <!-- Cover Banner -->
-  <div class="cover-banner">
-    <div class="cover-avatar"><img src="propic.png" alt="Naveen Ganadi" /></div>
-    <div class="cover-text">
-      <h2>Infillo AI</h2>
-      <p>AI can provide infinite solutions to all your problems</p>
-      <div class="cover-services">— Data, AI/ML, Quantum Computing and Web Development</div>
+  <!-- Futuristic Hero Header -->
+  <div class="hero-header">
+    <canvas class="hero-header-canvas" id="particleCanvas"></canvas>
+    <div class="hero-header-content">
+      <!-- Profile with Orbital Rings -->
+      <div class="profile-orbit-wrapper">
+        <div class="profile-avatar">
+          <img src="propic.png" alt="Naveen Ganadi" />
+        </div>
+        <div class="orbit-ring orbit-ring-1"></div>
+        <div class="orbit-ring orbit-ring-2"></div>
+        <div class="orbit-ring orbit-ring-3"></div>
+        <div class="orbit-dot orbit-dot-1"></div>
+        <div class="orbit-dot orbit-dot-2"></div>
+        <div class="orbit-dot orbit-dot-3"></div>
+      </div>
+
+      <!-- Text Content -->
+      <div class="header-text">
+        <h2 class="header-name"><span class="name-gradient">Naveen Ganadi</span></h2>
+        <p class="header-title"><span class="accent">AI/ML Engineer</span> &amp; <span class="accent">Data Scientist</span> building intelligent systems from zero to production</p>
+        <div class="domain-tags">
+          <span class="domain-tag ai"><span class="tag-dot"></span>Artificial Intelligence</span>
+          <span class="domain-tag ml"><span class="tag-dot"></span>Machine Learning</span>
+          <span class="domain-tag data"><span class="tag-dot"></span>Data Science</span>
+          <span class="domain-tag web"><span class="tag-dot"></span>Full-Stack</span>
+        </div>
+        <div class="header-status">
+          <div class="status-indicator"></div>
+          <span>Available for opportunities</span> · Fort Lauderdale, FL
+        </div>
+      </div>
     </div>
-    <img class="cover-logo" src="infillo_transparent.svg" alt="Infillo AI" />
   </div>
 
   <!-- Hero -->
@@ -1261,16 +1587,16 @@
         <div class="hero-left">
           <div class="hero-quote">
             <p>"Data is the memory of the world, and AI is the lens that gives it meaning. When we bring them together
-              with intention, we move beyond automation into understanding—and open the door to infinite possibilities."
+              with intention, we move beyond automation into understanding and open the door to infinite possibilities."
             </p>
-            <span class="quote-author">— Naveen Ganadi</span>
+            <span class="quote-author">Naveen Ganadi</span>
           </div>
         </div>
         <!-- Right: Name + Subtitle -->
         <div class="hero-right-info">
           <div class="hero-badge"><span class="dot"></span> Open to Opportunities</div>
           <h1><span class="gradient-text">Naveen Ganadi</span></h1>
-          <p class="subtitle">AI/ML Engineer &amp; Data Scientist — Building production GenAI agents, fine-tuning LLMs,
+          <p class="subtitle">AI/ML Engineer &amp; Data Scientist - Building production GenAI agents, fine-tuning LLMs,
             and shipping scalable ML systems from zero to one.</p>
         </div>
       </div>
@@ -1356,7 +1682,7 @@
       <div class="section-heading reveal">
         <div class="label">Expertise</div>
         <h2>Technical Proficiencies</h2>
-        <p>A deep toolkit spanning the full ML lifecycle — from research to production.</p>
+        <p>A deep toolkit spanning the full ML lifecycle, from research to production.</p>
       </div>
       <div class="skills-grid">
 
@@ -1568,32 +1894,21 @@
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="timeline-header">
-              <span class="timeline-role">Founding AI Engineer</span>
+              <span class="timeline-role">Founding Engineer</span>
               <span class="timeline-date">Sept 2025 – Present</span>
             </div>
             <div class="timeline-company">INFILLO AI · Remote</div>
-            <p class="timeline-summary">Worked cross-functionally with co-founders and UI/UX designers in a fast-paced
-              startup environment, owning the full engineering lifecycle from initial architecture through production
-              rollout for a multi-agent GenAI platform.</p>
+            <p class="timeline-summary">As the founding engineer, built Infillo, an AI-powered healthcare platform from the ground up, designing the architecture, building the full-stack application, provisioning cloud infrastructure, and shipping to production as the sole engineer.</p>
             <ul class="timeline-bullets">
-              <li>Shipped <span class="highlight">9 production GenAI agents</span> (Filler, GitMon, Soana, BuzzBee,
-                Stocker, Creator, Scraper, ProspectPro, Orchestrator), improving end-to-end task completion by <span
-                  class="highlight">~20%</span>.</li>
-              <li>Built the shared <span class="highlight">agentic AI runtime</span> (tool/function calling,
-                structured-output validation, retries, audit logging), improving multi-step workflow reliability by
-                <span class="highlight">~25%</span>.
-              </li>
-              <li>Implemented a <span class="highlight">unified LLM gateway</span> using OpenAI SDK and Claude API with
-                per-agent model routing and Claude Prompt Caching, reducing LLM cost by <span
-                  class="highlight">~25–30%</span> and P95 latency by <span class="highlight">~30–35%</span>.</li>
-              <li>Architected and scaled a <span class="highlight">serverless AWS marketplace platform</span> (API
-                Gateway, Lambda, DynamoDB, Cognito, S3, CloudFront; Amplify frontend).</li>
-              <li>Built Infillo as a <span class="highlight">Platform-as-a-Service</span> for agents with standardized
-                agent packaging, tool-permission scopes, versioning, and lifecycle management.</li>
-              <li>Designed an <span class="highlight">"Agent-as-a-Lambda" microservice architecture</span> cutting new
-                agent/service delivery time by <span class="highlight">~60%</span> across 11+ backend services.</li>
-              <li>Designed and operated the <span class="highlight">knowledge layer for agents (RAG)</span>: automated
-                ingestion, vector store management, incremental re-indexing, and evaluation harnesses.</li>
+              <li>Developed <span class="highlight">8 core healthcare services</span> end-to-end: Voice AI Receptionist (24/7 patient call handling), Smart Scheduling (calendar sync & conflict detection), Patient Records Management (EHR integration & secure cloud storage), Staff Management (shift scheduling & role-based access), Inventory Tracking (auto-reorder alerts & supplier management), Invoicing & Billing (insurance claims & payment reminders), Practice Analytics (real-time dashboards & revenue forecasting), and Security & Access Controls (encryption & audit trails).</li>
+              <li>Engineered a <span class="highlight">real-time Voice AI receptionist</span> using OpenAI's Realtime API and Twilio, enabling natural human-like phone conversations that greet patients, book appointments, answer practice FAQs from a knowledge base, and intelligently route calls with multi-language support and custom voice cloning.</li>
+              <li>Architected a <span class="highlight">production-grade serverless backend</span> on AWS using an "Agent-as-a-Lambda" microservice pattern with API Gateway, DynamoDB, Cognito, and CDK (Infrastructure-as-Code), reducing new service delivery time by <span class="highlight">~60%</span> across 11+ backend microservices.</li>
+              <li>Built a <span class="highlight">unified LLM gateway</span> with per-service model routing and Claude Prompt Caching, achieving <span class="highlight">25-30% reduction</span> in aggregate AI inference costs and <span class="highlight">30-35% improvement</span> in P95 response latency.</li>
+              <li>Designed and enforced a <span class="highlight">modular 5-file Lambda standard</span> (router, handler, service, data-models, resource) across all backend services, ensuring codebase consistency, rapid onboarding, and fast feature iteration.</li>
+              <li>Built a <span class="highlight">premium React + TypeScript frontend</span> featuring a dark-themed glassmorphism UI with micro-animations, responsive layouts, and a healthcare-specific dashboard designed to deliver an enterprise-grade user experience for practice staff.</li>
+              <li>Designed a <span class="highlight">multi-table DynamoDB schema</span> (28+ managed tables) with lazy user initialization and resilient onboarding patterns, ensuring zero data loss and clear data separation across all platform services.</li>
+              <li>Set up <span class="highlight">end-to-end CI/CD pipelines</span> via GitHub Actions for automated testing and deployment to AWS on push to dev/prod branches, enabling atomic zero-downtime releases and rapid iteration cycles.</li>
+              <li>Owned the <span class="highlight">complete product lifecycle</span> as founding engineer from initial concept and market research through UX design, full-stack development, cloud infrastructure, SEO optimization, Cal.com scheduling integration, Twilio voice connectivity, and go-to-market branding strategy.</li>
             </ul>
           </div>
         </div>
@@ -1815,18 +2130,18 @@
       <div class="award-card reveal">
         <div class="award-icon">🏆</div>
         <h3>Best Innovation Award 2020</h3>
-        <p>RevScale AI — Recognized for exceptional innovation in AI-driven lead generation and agentic systems.</p>
+        <p>RevScale AI - Recognized for exceptional innovation in AI-driven lead generation and agentic systems.</p>
       </div>
       <div class="award-card reveal" style="margin-top: 20px;">
         <div class="award-icon">🌟</div>
         <h3>Continuous Learning & Development Award 2020</h3>
-        <p>RevScale AI — Awarded for commitment to continuous professional growth and upskilling in emerging AI
+        <p>RevScale AI - Awarded for commitment to continuous professional growth and upskilling in emerging AI
           technologies.</p>
       </div>
       <div class="award-card reveal" style="margin-top: 20px;">
         <div class="award-icon">🧠</div>
-        <h3>Winner — AI Hackathon 2021</h3>
-        <p>NIT AP and JNTUH Sultanpur — Designed a Face Mask Detection tool using ResNet, MobileNet, and traditional ML
+        <h3>Winner - AI Hackathon 2021</h3>
+        <p>NIT AP and JNTUH Sultanpur - Designed a Face Mask Detection tool using ResNet, MobileNet, and traditional ML
           models.</p>
       </div>
     </div>
@@ -1842,7 +2157,7 @@
       <div class="project-grid">
         <div class="project-card reveal">
           <div class="project-emoji">👁️</div>
-          <h3>Gods Eye — Face Mask Detection</h3>
+          <h3>Gods Eye - Face Mask Detection</h3>
           <p>Real-time face mask detection system using a pre-trained MaskNet model and OpenCV for live video stream
             analysis.</p>
           <div class="project-tags">
@@ -1894,7 +2209,7 @@
       <div class="section-heading reveal">
         <div class="label">Services</div>
         <h2>Consultations</h2>
-        <p>Delivering impactful AI solutions — from past client engagements to services available for your team.</p>
+        <p>Delivering impactful AI solutions, from past client engagements to services available for your team.</p>
       </div>
 
       <!-- Past Consultations -->
@@ -1906,7 +2221,7 @@
           <div class="consult-icon strategy">🔍</div>
           <h3>Researcher Agentic System</h3>
           <p>Built an agentic research system that analyzes Franchise Disclosure Documents (FDDs), evaluates previous
-            franchise owners and their demographics, and generates targeted lead profiles — identifying ideal prospects
+            franchise owners and their demographics, and generates targeted lead profiles, identifying ideal prospects
             for new leads and franchise expansion opportunities.</p>
           <ul class="consult-includes">
             <li>FDD ingestion & automated analysis</li>
@@ -2058,7 +2373,7 @@
         <div class="consult-card reveal">
           <div class="consult-icon mlops">🌐</div>
           <h3>Full-Stack Web Development</h3>
-          <p>Modern, responsive web applications with MERN stack, Next.js, and API integrations — from concept to
+          <p>Modern, responsive web applications with MERN stack, Next.js, and API integrations, from concept to
             production.</p>
           <ul class="consult-includes">
             <li>React.js / Next.js frontends</li>
@@ -2084,7 +2399,7 @@
         <div class="consult-card reveal">
           <div class="consult-icon llm">🏗️</div>
           <h3>System Design & Architecture</h3>
-          <p>Scalable, production-grade system architectures — microservices, event-driven patterns, and cloud-native
+          <p>Scalable, production-grade system architectures: microservices, event-driven patterns, and cloud-native
             solutions for AI and web platforms.</p>
           <ul class="consult-includes">
             <li>Microservices & API gateway design</li>
@@ -2097,7 +2412,7 @@
         <div class="consult-card reveal">
           <div class="consult-icon mlops">🗄️</div>
           <h3>Database Design & Management</h3>
-          <p>Expert database design spanning vector databases, graph databases, NoSQL, and relational systems —
+          <p>Expert database design spanning vector databases, graph databases, NoSQL, and relational systems,
             optimized for AI workloads and complex queries.</p>
           <ul class="consult-includes">
             <li>Vector databases (Pinecone, FAISS, Weaviate)</li>
@@ -2202,6 +2517,82 @@
         }
       });
     });
+
+    // Particle Canvas Animation
+    (function() {
+      const canvas = document.getElementById('particleCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      const PARTICLE_COUNT = 60;
+      const CONNECTION_DIST = 120;
+      const colors = [
+        'rgba(59, 130, 246, 0.6)',
+        'rgba(168, 85, 247, 0.5)',
+        'rgba(6, 214, 160, 0.5)'
+      ];
+
+      function resize() {
+        const rect = canvas.parentElement.getBoundingClientRect();
+        canvas.width = rect.width;
+        canvas.height = rect.height;
+      }
+
+      function createParticles() {
+        particles = [];
+        for (let i = 0; i < PARTICLE_COUNT; i++) {
+          particles.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            vx: (Math.random() - 0.5) * 0.4,
+            vy: (Math.random() - 0.5) * 0.4,
+            r: Math.random() * 2 + 1,
+            color: colors[Math.floor(Math.random() * colors.length)]
+          });
+        }
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        // Draw connections
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < CONNECTION_DIST) {
+              ctx.beginPath();
+              ctx.strokeStyle = `rgba(59, 130, 246, ${0.08 * (1 - dist / CONNECTION_DIST)})`;
+              ctx.lineWidth = 0.5;
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.stroke();
+            }
+          }
+        }
+        // Draw particles
+        particles.forEach(p => {
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = p.color;
+          ctx.fill();
+          // Move
+          p.x += p.vx;
+          p.y += p.vy;
+          // Wrap around
+          if (p.x < 0) p.x = canvas.width;
+          if (p.x > canvas.width) p.x = 0;
+          if (p.y < 0) p.y = canvas.height;
+          if (p.y > canvas.height) p.y = 0;
+        });
+        requestAnimationFrame(draw);
+      }
+
+      resize();
+      createParticles();
+      draw();
+      window.addEventListener('resize', () => { resize(); createParticles(); });
+    })();
   </script>
 </body>
 
