@@ -1,0 +1,154 @@
+{
+  "experience": [
+    {
+      "title": "Lead AI Engineer \u2014 SpendRule",
+      "meta": "Remote \u00b7 Full time \u00b7 Apr 2026 \u2013 Present",
+      "paragraphs": [
+        "Healthcare spend-audit platform that checks hospital invoices against contract terms, used by MemorialCare, OSF HealthCare, MUSC, Kettering Health and MultiCare.",
+        "- Lead engineering across three production systems: a Python AI validation pipeline, a Next.js + Express customer app, and a cloud extraction service. Top committer on both app repos (1,230+ commits).",
+        "- Built an LLM validation pipeline (Inngest orchestration, Claude matching, Qdrant vector search, Postgres + Neo4j) that validated 35K invoice lines worth $93.6M across 11 tenants and flagged $137.6M in unvalidated spend.",
+        "- Designed a verify-then-route pipeline that checks every extracted value before routing: 81% auto-accepted, 16% second pass, 3% human review. It caught that 90% of shift rows ($37.8M of $41.5M) were being dropped during extraction. Live for MultiCare since Oct 2026.",
+        "- Led audits that surfaced $173.5M of hidden variance across 3,844 rows. A six-agent audit of 713 validations found $17.9M priced from excluded contracts and a calculation bug hiding $3.15M.",
+        "- Built an autonomous remediation fleet: 9 AI agents running 30 detectors across 14 tenants with zero detector errors, surfacing $39M reported as $0 and opening fix PRs automatically.",
+        "- Built Phoenix from scratch: Browserbase browser automation + Inngest pulling invoices and contracts from hospital ERP and contract systems (OSF Premier, CobbleStone, MUSC GHX) into S3. Made ingestion deterministic (38 of 38 documents every run, up from 26\u201338). Shipped with Docker, GHCR CI, Cycle and Vercel.",
+        "- Hardened multi-tenant security: fixed cross-tenant data leaks, moved AI-generated SQL onto 51 tenant-filtered views so it fails closed, and set up enterprise SSO with WorkOS and Microsoft Entra.",
+        "- Built the in-app AI assistant with streaming answers and topic guardrails; ran the model evaluation (Claude 8/8 vs GPT-4.1 5/8 on the test set).",
+        "- Shipped dispute management (Cases and Claims with demand letters), an invoice-review workbench and analytics; added Redis caching and rate limiting and made key queries 3\u20136x faster.",
+        "- Shipped a recovery job that found 3,542 stalled invoices (7x the estimate) and a pricing benchmark built on the CMS ambulance fee schedule.",
+        "- Led the MemorialCare production cutover and working sessions with hospital AP and IT teams; published about 11 production releases; built the sales demo environment on AWS CDK + Vercel.",
+        "- Run the daily standup for a team of 7\u20139, set the PR review process, wrote role specs and ran technical interviews for backend, full-stack and data engineering hires, and onboard new engineers."
+      ]
+    },
+    {
+      "title": "Founding AI Engineer \u2014 Infillo AI",
+      "meta": "Remote \u00b7 Contract \u00b7 Sep 2025 \u2013 Apr 2026",
+      "paragraphs": [
+        "Built eight healthcare practice services end to end with the co-founders: voice receptionist, scheduling, patient records, staff management, inventory, billing, analytics and access controls.",
+        "- Built the AI-powered healthcare platform from the ground up as sole engineer: architecture, full-stack app, cloud infrastructure and production launch.",
+        "- Engineered a real-time Voice AI receptionist on OpenAI's Realtime API and Twilio that greets patients, books appointments, answers FAQs from a knowledge base and routes calls, with multi-language support and voice cloning.",
+        "- Built a unified LLM gateway with per-service model routing and Claude prompt caching, cutting AI inference cost 25\u201330% and improving P95 latency 30\u201335%.",
+        "- Architected a serverless AWS backend with an \"Agent-as-a-Lambda\" pattern (API Gateway, DynamoDB, Cognito, CDK), reducing new-service delivery time ~60% across 11+ microservices.",
+        "- Set a modular 5-file Lambda standard (router, handler, service, data models, resource) across every service for consistency and fast onboarding.",
+        "- Designed a 28+ table DynamoDB schema with lazy user initialization and resilient onboarding for zero data loss.",
+        "- Built a React + TypeScript frontend with a healthcare dashboard, and CI/CD on GitHub Actions for zero-downtime deploys to dev and prod.",
+        "- Owned the product lifecycle from market research and UX through SEO, Cal.com and Twilio integrations, and go-to-market."
+      ]
+    },
+    {
+      "title": "Data Scientist \u2014 RevScale AI",
+      "meta": "Fort Lauderdale, FL \u00b7 Full time \u00b7 Sep 2024 \u2013 Aug 2025",
+      "paragraphs": [
+        "Worked with the C-suite and customer success on ML models and workflows for lead generation and multi-franchise business analysis.",
+        "- Fine-tuned LLaMA-3 8B with SFT + LoRA + DPO for domain- and tone-specific generation, raising personalization 25% and client engagement 30%.",
+        "- Shipped four production agents (Inbound Agent, Outbound Prospector, FDD Targeting Agent, Auto-Responder) across acquisition channels.",
+        "- Built multi-agent lead pipelines with LangChain + Airflow and CrewAI scoring, processing 500+ leads/day, improving lead gathering 40% and driving a 50% conversion uplift.",
+        "- Improved accuracy with DeBERTa sentiment and intent models (+18%) and a Pinecone RAG agent (+20%), deployed on Azure (Blob, CosmosDB, Functions, GPU VMs) with GitHub Actions CI/CD and W&B monitoring.",
+        "- Played a pivotal role as the sole data scientist in helping the team secure funding."
+      ]
+    },
+    {
+      "title": "AI Engineer \u2014 Thirdi.co",
+      "meta": "Boston, MA \u00b7 Contract \u00b7 Jan 2024 \u2013 Aug 2024",
+      "paragraphs": [
+        "- Built a multi-model AI therapist platform combining LLaMA-3-70B, BERT and spaCy for context-aware conversational support through Telegram and a web UI.",
+        "- Fine-tuned LLaMA-3-70B with multimodal inputs (text, speech, facial emotion recognition) for mood detection and personalized interactions.",
+        "- Developed real-time NLP pipelines and mood models (Random Forest, SVM) that adapt responses to user sentiment.",
+        "- Deployed a HIPAA-compliant system on AWS with encryption, access controls, audit logging and automated ML pipelines."
+      ]
+    },
+    {
+      "title": "ML Engineer \u2014 Workmate Inc (Client: Morgan Stanley)",
+      "meta": "Jersey City, NJ \u00b7 Contract \u00b7 Jan 2023 \u2013 Jan 2024",
+      "paragraphs": [
+        "- Built Python and C++ preprocessing pipelines over large client and portfolio data in S3: missing-data handling, transaction outlier detection, consistency checks and feature engineering.",
+        "- Led experiments across 10+ algorithms (Gradient Boosting, XGBoost, LightGBM, neural nets) for risk profiling and portfolio optimization, a 12% performance gain through tuning and k-fold validation.",
+        "- Deployed risk and anomaly detection models for unusual trading behavior, cutting false positives 20% and improving detection accuracy 25%.",
+        "- Designed ML infrastructure on SageMaker and Lambda for automated training and retraining; served optimized BERT with Ray, Databricks and GPU EC2 clusters for lower latency."
+      ]
+    },
+    {
+      "title": "Machine Learning Engineer \u2014 Capgemini",
+      "meta": "Hyderabad, India \u00b7 Full time \u00b7 Jan 2021 \u2013 Dec 2021",
+      "paragraphs": [
+        "- Implemented a customer-support recommendation system for telecom with a reranking algorithm.",
+        "- Built C++ feature extraction for low-latency telecom data streams, a 22% uplift in network optimization models; automated ETL with Airflow, cutting load time 40%.",
+        "- Built real-time monitoring dashboards in New Relic and Datadog and CI/CD with Git-based version control."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Company Brain \u2014 slashh",
+      "meta": "Jun 2026 \u2013 present",
+      "paragraphs": [
+        "AI knowledge platform that connects a company's tools into one searchable memory, with encrypted OAuth connectors and memory adapters for LangGraph and CrewAI. Three web portals, 360+ commits.",
+        "NestJS, Qdrant, Neo4j, Redis, Cognito"
+      ]
+    },
+    {
+      "title": "On-device voice stress detection",
+      "meta": "Hackathon \u00b7 Jun 2026",
+      "paragraphs": [
+        "Detects stress in a speaker's voice entirely on the phone. A PyTorch CNN exported through ExecuTorch and quantized to INT8 for the Qualcomm Hexagon NPU.",
+        "PyTorch, ExecuTorch, INT8, Edge AI"
+      ]
+    },
+    {
+      "title": "agentsmd",
+      "meta": "Open source \u00b7 MIT",
+      "paragraphs": [
+        "Command-line tool and GitHub Action that keeps AI coding-agent config files (AGENTS.md, CLAUDE.md, .cursorrules) in sync and checks them for errors.",
+        "Node.js, TypeScript, GitHub Actions"
+      ]
+    },
+    {
+      "title": "Sentinel",
+      "meta": "SpendRule internal \u00b7 2026",
+      "paragraphs": [
+        "Autonomous daily agent that detects data and code issues, triages them, writes the fix and opens a pull request with a linked ticket. Runs on its own AWS box, provisioned with CDK.",
+        "Claude Agent SDK, AWS CDK, EC2, Linear"
+      ]
+    },
+    {
+      "title": "Agentic contract RAG",
+      "meta": "SpendRule R&D \u00b7 Oct 2026",
+      "paragraphs": [
+        "Agentic retrieval over contracts on AWS Bedrock with hybrid BM25 + Cohere embedding search and a deterministic claim verifier that checks every answer against source text.",
+        "Bedrock, Hybrid search, RRF, Claude"
+      ]
+    },
+    {
+      "title": "Voice AI receptionist",
+      "meta": "Infillo AI \u00b7 2025",
+      "paragraphs": [
+        "Phone agent for medical practices that answers 24/7, books appointments and answers questions from the practice's knowledge base, in multiple languages.",
+        "OpenAI Realtime, Twilio, AWS Lambda"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "M.S. Computer Science \u2014 Stevens Institute of Technology",
+      "meta": "Hoboken, NJ \u00b7 Jan 2022 \u2013 May 2023",
+      "paragraphs": [
+        "GPA 3.5 / 4.0. Research Assistant. Coursework in machine learning, deep learning, NLP, data mining, statistics, parallel computing, AI, cloud computing and databases."
+      ]
+    },
+    {
+      "title": "AI Hackathon Winner \u2014 NIT AP and JNTUH Sultanpur",
+      "meta": "2021",
+      "paragraphs": [
+        "Won for a face-mask detection tool built on ResNet."
+      ]
+    }
+  ],
+  "skills": [
+    "Generative AI: RAG, Agentic AI, Agent orchestration, Claude Agent SDK, LLM fine-tuning, SFT, DPO, PPO, RLHF, LoRA / PEFT, TRL, Inference optimization, Evaluation pipelines, Prompt caching",
+    "Machine learning: Transformers, BERT / DeBERTa, LLaMA, Qwen 2.5, VLMs, Computer vision, Mask R-CNN, XGBoost, Random Forest, Time series, Recommendation systems, Ranking, GANs / VAE",
+    "Frameworks: PyTorch, TensorFlow, Hugging Face, vLLM, ONNX, ExecuTorch, LangChain, LangGraph, LangSmith, CrewAI, LlamaIndex, Ray, PySpark, Inngest, W&B",
+    "Languages & web: Python, TypeScript, JavaScript, C / C++, Java, SQL, Next.js, React, Node.js, Express, NestJS, FastAPI, Django, Flask",
+    "Cloud & MLOps: AWS (Bedrock, SageMaker, Lambda, EC2, S3, DynamoDB, CDK), Azure ML, Databricks, GCP, Docker, Kubernetes, Kubeflow, MLflow, Airflow, Kafka, GitHub Actions, Vercel",
+    "Data stores: PostgreSQL, Prisma, MySQL, Redis, MongoDB, DynamoDB, CosmosDB, Neo4j, Qdrant, Pinecone, FAISS, ChromaDB, Snowflake, Cassandra",
+    "Tools: Git, Linear, Jira, Confluence, Postman, n8n, Zapier, Splunk, Datadog, Tableau, WorkOS SSO, Browserbase"
+  ]
+}

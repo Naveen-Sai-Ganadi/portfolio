@@ -1,0 +1,154 @@
+[
+  {
+    "name": "agentsmd",
+    "url": "https://github.com/Naveen-Sai-Ganadi/agentsmd",
+    "description": "Universal CLI to keep AGENTS.md, CLAUDE.md, .cursorrules, .github/copilot-instructions.md, and .windsurfrules in sync.",
+    "language": "TypeScript",
+    "fork": false,
+    "empty": false
+  },
+  {
+    "name": "ai-debate-arena",
+    "url": "https://github.com/Naveen-Sai-Ganadi/ai-debate-arena",
+    "description": "Make Claude and ChatGPT debate each other, mediated by Gemini, until they converge \u2014 in one desktop window. No API keys.",
+    "language": "TypeScript",
+    "fork": false,
+    "empty": false
+  },
+  {
+    "name": "slashh-executorch",
+    "url": "https://github.com/Naveen-Sai-Ganadi/slashh-executorch",
+    "description": "",
+    "language": "Python",
+    "fork": false,
+    "empty": false
+  },
+  {
+    "name": "slashh",
+    "url": "https://github.com/Naveen-Sai-Ganadi/slashh",
+    "description": "",
+    "language": "TypeScript",
+    "fork": false,
+    "empty": false
+  },
+  {
+    "name": "slashh-ui",
+    "url": "https://github.com/Naveen-Sai-Ganadi/slashh-ui",
+    "description": "",
+    "language": "HTML",
+    "fork": false,
+    "empty": false
+  },
+  {
+    "name": "slashh-api",
+    "url": "https://github.com/Naveen-Sai-Ganadi/slashh-api",
+    "description": "",
+    "language": "TypeScript",
+    "fork": false,
+    "empty": false
+  },
+  {
+    "name": "portfolio",
+    "url": "https://github.com/Naveen-Sai-Ganadi/portfolio",
+    "description": "",
+    "language": "HTML",
+    "fork": false,
+    "empty": false
+  },
+  {
+    "name": "load",
+    "url": "https://github.com/Naveen-Sai-Ganadi/load",
+    "description": "",
+    "language": "JavaScript",
+    "fork": false,
+    "empty": false
+  },
+  {
+    "name": "GodsEye",
+    "url": "https://github.com/Naveen-Sai-Ganadi/GodsEye",
+    "description": "",
+    "language": "Jupyter Notebook",
+    "fork": false,
+    "empty": false
+  },
+  {
+    "name": "Resume_Analyzer",
+    "url": "https://github.com/Naveen-Sai-Ganadi/Resume_Analyzer",
+    "description": "",
+    "language": "JavaScript",
+    "fork": false,
+    "empty": false
+  },
+  {
+    "name": "CV_Analyzer",
+    "url": "https://github.com/Naveen-Sai-Ganadi/CV_Analyzer",
+    "description": "",
+    "language": "Python",
+    "fork": false,
+    "empty": false
+  },
+  {
+    "name": "MLproject2",
+    "url": "https://github.com/Naveen-Sai-Ganadi/MLproject2",
+    "description": "",
+    "language": "Jupyter Notebook",
+    "fork": false,
+    "empty": false
+  },
+  {
+    "name": "End-to-End-MLflow",
+    "url": "https://github.com/Naveen-Sai-Ganadi/End-to-End-MLflow",
+    "description": "",
+    "language": "Python",
+    "fork": false,
+    "empty": false
+  },
+  {
+    "name": "mlprojects",
+    "url": "https://github.com/Naveen-Sai-Ganadi/mlprojects",
+    "description": "",
+    "language": "Python",
+    "fork": false,
+    "empty": false
+  },
+  {
+    "name": "Facial_Expression_Recognition",
+    "url": "https://github.com/Naveen-Sai-Ganadi/Facial_Expression_Recognition",
+    "description": "Facial Expression Recognition",
+    "language": "Jupyter Notebook",
+    "fork": false,
+    "empty": false
+  },
+  {
+    "name": "Pycharm",
+    "url": "https://github.com/Naveen-Sai-Ganadi/Pycharm",
+    "description": "my python projects",
+    "language": "",
+    "fork": false,
+    "empty": true
+  },
+  {
+    "name": "Git-example",
+    "url": "https://github.com/Naveen-Sai-Ganadi/Git-example",
+    "description": "",
+    "language": "",
+    "fork": false,
+    "empty": true
+  },
+  {
+    "name": "automation",
+    "url": "https://github.com/Naveen-Sai-Ganadi/automation",
+    "description": "writing automation scripts for some tasks like auto applying for jobs , filtering and sending notifications",
+    "language": "",
+    "fork": false,
+    "empty": true
+  },
+  {
+    "name": "VacayGuide",
+    "url": "https://github.com/Naveen-Sai-Ganadi/VacayGuide",
+    "description": "CS554 Project, Vacay Guide Service",
+    "language": "JavaScript",
+    "fork": true,
+    "empty": false
+  }
+]
